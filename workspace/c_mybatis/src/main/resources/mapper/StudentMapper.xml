@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.example.c_mybatis.mapper.StudentMapper">
+
+<!--    타입알리아스 주기 전!-->
+<!--    <select id="selectAll" resultType="com.example.c_mybatis.domain.StudentVO">-->
+<!--        select * from TBL_STUDENT-->
+<!--    </select>-->
+
+    <select id="selectAll" resultType="StudentVO">
+        select * from TBL_STUDENT
+    </select>
+
+<!--    파라미터 타입은 생략이 가능하다. 하지만 복잡하다면 명시해준다. -->
+    <insert id="insert" parameterType="StudentVO">
+        INSERT INTO TBL_STUDENT (STUDENT_ID ,student_name, student_age, student_gender, student_address)
+        VALUES (SEQ_STUDENT.nextval, #{studentName}, #{studentAge}, #{studentGender}, #{studentAddress})
+    </insert>
+
+    <!--    pk를 이용한 조회  -->
+    <select id="selectById" resultType="StudentVO">
+        select * from TBL_STUDENT
+        where STUDENT_ID = #{studentId}
+    </select>
+
+<!--    pk 를 이용한 삭제-->
+    <delete id="deleteById" >
+        delete from TBL_STUDENT
+        where STUDENT_ID = #{studentId}
+    </delete>
+
+<!--    update-->
+<!--    update 는 매개변수로 VO를 받아와서 하는 경우가 많다. -->
+    <update id="update">
+        UPDATE TBL_STUDENT
+        SET student_name = #{studentName}, student_age = #{studentAge}, student_gender = #{studentGender}, student_address = #{studentAddress}
+        WHERE student_id = #{studentId}
+    </update>
+</mapper>

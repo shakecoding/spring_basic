@@ -3,5 +3,13 @@
         "http://mybatis.org/dtd/mybatis-3-config.dtd">
 
 <configuration>
+    <!-- 별칭 작성 부분 -->
+    <typeAliases>
+        <typeAlias type="com.example.c_mybatis.domain.StudentVO" alias="StudentVO"/>
+    </typeAliases>
 
+<!--    &lt;!&ndash; SQL이 작성되는 mapper 파일 위치 등록 &ndash;&gt;-->
+<!--    <mappers>-->
+<!--        <mapper resource="/mappers/member-mapper.xml"/>-->
+<!--    </mappers>-->
 </configuration>

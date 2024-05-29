@@ -1,0 +1,43 @@
+1716973178021|26|statement|connection 0|url jdbc:p6spy:oracle:thin:@localhost:1521:XE|SELECT * FROM product          WHERE  name like '%' || ? ||'%'|SELECT * FROM product          WHERE  name like '%' || 'Yoga' ||'%'
+[statement] | 27 ms | 
+    SELECT
+        *       
+    FROM
+        product                
+    WHERE
+        name like '%' || 'Yoga' ||'%'
+2024-05-29 18:06:03 INFO  c.e.d.mapper.ProductMapperTest - Starting ProductMapperTest using Java 17.0.1 with PID 20972 (started by Administrator in D:\강의 자료\spring_basic\spring_basic\workspace\d_mybatisTask)
+2024-05-29 18:06:03 INFO  c.e.d.mapper.ProductMapperTest - No active profile set, falling back to 1 default profile: "default"
+2024-05-29 18:06:04 INFO  c.e.d.mapper.ProductMapperTest - Started ProductMapperTest in 1.633 seconds (process running for 2.402)
+2024-05-29 18:06:05 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2024-05-29 18:06:05 INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.p6spy.engine.wrapper.ConnectionWrapper@56b704ea
+2024-05-29 18:06:05 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+[statement] | 27 ms | 
+    SELECT
+        *       
+    FROM
+        product                
+    WHERE
+        name like '%' || 'Yoga' ||'%'
+2024-05-29 18:06:06 INFO  c.e.d.mapper.ProductMapperTest - Product(id=15, name=Yoga Mat, price=49.99, category=Fitness, description=Eco-friendly yoga mat)
+2024-05-29 18:06:06 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2024-05-29 18:06:06 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2024-05-29 18:08:27 INFO  c.e.d.mapper.ProductMapperTest - Starting ProductMapperTest using Java 17.0.1 with PID 3308 (started by Administrator in D:\강의 자료\spring_basic\spring_basic\workspace\d_mybatisTask)
+2024-05-29 18:08:27 INFO  c.e.d.mapper.ProductMapperTest - No active profile set, falling back to 1 default profile: "default"
+2024-05-29 18:08:28 INFO  c.e.d.mapper.ProductMapperTest - Started ProductMapperTest in 1.608 seconds (process running for 2.345)
+2024-05-29 18:08:29 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2024-05-29 18:08:30 INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.p6spy.engine.wrapper.ConnectionWrapper@3dd591b9
+2024-05-29 18:08:30 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2024-05-29 18:08:30 INFO  p6spy - #1716973710119 | took 28ms | statement | connection 1| url jdbc:p6spy:oracle:thin:@localhost:1521:XE
+SELECT * FROM product
+         WHERE  name like '%' || ? ||'%'
+SELECT * FROM product
+         WHERE  name like '%' || 'Yoga' ||'%';
+2024-05-29 18:08:30 INFO  p6spy - #1716973710119 | took 28ms | statement | connection 0| url jdbc:oracle:thin:@localhost:1521:XE
+SELECT * FROM product
+         WHERE  name like '%' || ? ||'%'
+SELECT * FROM product
+         WHERE  name like '%' || 'Yoga' ||'%';
+2024-05-29 18:08:30 INFO  c.e.d.mapper.ProductMapperTest - Product(id=15, name=Yoga Mat, price=49.99, category=Fitness, description=Eco-friendly yoga mat)
+2024-05-29 18:08:30 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2024-05-29 18:08:30 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
