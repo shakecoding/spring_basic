@@ -4,7 +4,7 @@
         "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 
 <mapper namespace="com.example.d_mybatistask.mapper.ProductMapper">
-    <select id="findByConditions" resultType="com.example.d_mybatistask.domain.Product">
+    <select id="findByConditions" resultType="ProductVO">
         SELECT * FROM product
         <where>
             <if test="name != null">AND name like '%' || #{name} ||'%'</if>
@@ -13,7 +13,7 @@
         </where>
     </select>
 
-    <select id="findByChoose" resultType="Product">
+    <select id="findByChoose" resultType="ProductVO">
         SELECT * FROM product
         <where>
             <choose>
@@ -24,12 +24,12 @@
         </where>
     </select>
 
-    <insert id="insert" parameterType="com.example.d_mybatistask.domain.Product" useGeneratedKeys="true" keyProperty="id">
+    <insert id="insert" parameterType="com.example.d_mybatistask.domain.vo.ProductVO" useGeneratedKeys="true" keyProperty="id">
         INSERT INTO product (id, name, price, category, description)
         VALUES (SEQ_PRODUCT.nextval ,#{name}, #{price}, #{category}, #{description})
     </insert>
 
-    <update id="update" parameterType="com.example.d_mybatistask.domain.Product">
+    <update id="update" parameterType="com.example.d_mybatistask.domain.vo.ProductVO">
         UPDATE product
         <set>
             <if test="name != null">name = #{name},</if>
