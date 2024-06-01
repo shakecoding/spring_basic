@@ -21,7 +21,8 @@
 <body>
 <div class="container mt-5">
     <h1 class="mb-4" th:text="${product.id != null} ? 'Edit Product' : 'Create Product'">Product Form</h1>
-    <form th:action="${product.id != null} ? @{/product/edit/{id}(id=${product.id})} : @{/product/write}"
+<!--    <form th:action="${product.id != null} ? @{/product/edit/{id}(id=${product.id})} : @{/product/write}"-->
+    <form th:action="@{/product/write}"
           th:object="${product}" method="post">
         <input type="hidden" th:if="${product.id != null}" th:field="*{id}">
         <div class="mb-3">
