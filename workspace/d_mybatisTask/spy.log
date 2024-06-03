@@ -4069,3 +4069,494 @@ select id, name from product;
 2024-06-01 13:31:16 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8090 (http) with context path ''
 2024-06-01 13:31:16 INFO  c.e.d.DMybatisTaskApplication - Started DMybatisTaskApplication in 0.993 seconds (process running for 9059.08)
 2024-06-01 13:31:16 INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+2024-06-03 09:38:08 INFO  c.e.d.DMybatisTaskApplication - Starting DMybatisTaskApplication using Java 17.0.1 with PID 9752 (D:\강의 자료\spring_basic\spring_basic\workspace\d_mybatisTask\build\classes\java\main started by Administrator in D:\강의 자료\spring_basic\spring_basic\workspace\d_mybatisTask)
+2024-06-03 09:38:08 INFO  c.e.d.DMybatisTaskApplication - No active profile set, falling back to 1 default profile: "default"
+2024-06-03 09:38:08 INFO  o.s.b.d.restart.ChangeableUrls - The Class-Path manifest attribute in C:\Users\Administrator\.gradle\caches\modules-2\files-2.1\com.oracle.database.jdbc\ojdbc11\21.9.0.0\1aad2e20684ee075bb9ebdca2d83f028e4fd35fa\ojdbc11-21.9.0.0.jar referenced one or more files that do not exist: file:/C:/Users/Administrator/.gradle/caches/modules-2/files-2.1/com.oracle.database.jdbc/ojdbc11/21.9.0.0/1aad2e20684ee075bb9ebdca2d83f028e4fd35fa/oraclepki.jar
+2024-06-03 09:38:08 INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-06-03 09:38:08 INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-06-03 09:38:09 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8090 (http)
+2024-06-03 09:38:09 INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2024-06-03 09:38:09 INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.24]
+2024-06-03 09:38:09 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-06-03 09:38:09 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 839 ms
+2024-06-03 09:38:09 INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2024-06-03 09:38:09 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8090 (http) with context path ''
+2024-06-03 09:38:09 INFO  c.e.d.DMybatisTaskApplication - Started DMybatisTaskApplication in 1.981 seconds (process running for 2.557)
+2024-06-03 09:38:20 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-06-03 09:38:20 INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2024-06-03 09:38:20 INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 0 ms
+2024-06-03 09:38:21 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2024-06-03 09:38:21 INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.p6spy.engine.wrapper.ConnectionWrapper@5030ffff
+2024-06-03 09:38:21 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2024-06-03 09:38:22 INFO  p6spy - #1717375102090 | took 33ms | statement | connection 1| url jdbc:p6spy:oracle:thin:@localhost:1521:XE
+select id, name from product
+select id, name from product;
+2024-06-03 09:38:22 INFO  p6spy - #1717375102090 | took 33ms | statement | connection 0| url jdbc:oracle:thin:@localhost:1521:XE
+select id, name from product
+select id, name from product;
+2024-06-03 09:38:37 INFO  p6spy - #1717375117174 | took 0ms | statement | connection 1| url jdbc:p6spy:oracle:thin:@localhost:1521:XE
+select id, name from product
+select id, name from product;
+2024-06-03 09:38:37 INFO  p6spy - #1717375117174 | took 0ms | statement | connection 11| url jdbc:oracle:thin:@localhost:1521:XE
+select id, name from product
+select id, name from product;
+2024-06-03 09:38:38 INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener - Restarting due to 10 class path changes (0 additions, 0 deletions, 10 modifications)
+2024-06-03 09:38:38 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2024-06-03 09:38:38 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2024-06-03 09:38:38 INFO  c.e.d.DMybatisTaskApplication - Starting DMybatisTaskApplication using Java 17.0.1 with PID 9752 (D:\강의 자료\spring_basic\spring_basic\workspace\d_mybatisTask\build\classes\java\main started by Administrator in D:\강의 자료\spring_basic\spring_basic\workspace\d_mybatisTask)
+2024-06-03 09:38:38 INFO  c.e.d.DMybatisTaskApplication - No active profile set, falling back to 1 default profile: "default"
+2024-06-03 09:38:38 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8090 (http)
+2024-06-03 09:38:38 INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2024-06-03 09:38:38 INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.24]
+2024-06-03 09:38:38 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-06-03 09:38:38 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 150 ms
+2024-06-03 09:38:38 INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2024-06-03 09:38:38 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8090 (http) with context path ''
+2024-06-03 09:38:38 INFO  c.e.d.DMybatisTaskApplication - Started DMybatisTaskApplication in 0.276 seconds (process running for 31.619)
+2024-06-03 09:38:38 INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+2024-06-03 09:38:39 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-06-03 09:38:39 INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2024-06-03 09:38:39 INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 0 ms
+2024-06-03 09:38:39 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Starting...
+2024-06-03 09:38:39 INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-2 - Added connection com.p6spy.engine.wrapper.ConnectionWrapper@6256882b
+2024-06-03 09:38:39 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Start completed.
+2024-06-03 09:38:39 INFO  p6spy - #1717375119841 | took 0ms | statement | connection 13| url jdbc:p6spy:oracle:thin:@localhost:1521:XE
+select id, name from product
+select id, name from product;
+2024-06-03 09:38:39 INFO  p6spy - #1717375119841 | took 0ms | statement | connection 12| url jdbc:oracle:thin:@localhost:1521:XE
+select id, name from product
+select id, name from product;
+2024-06-03 09:38:53 INFO  p6spy - #1717375133455 | took 2ms | statement | connection 13| url jdbc:p6spy:oracle:thin:@localhost:1521:XE
+insert into PRODUCT (ID, NAME, PRICE, CATEGORY, DESCRIPTION)
+        values (SEQ_PRODUCT.nextval, ?, ?, ?, ?)
+insert into PRODUCT (ID, NAME, PRICE, CATEGORY, DESCRIPTION)
+        values (SEQ_PRODUCT.nextval, 'dd', 0.01, 'dd', 'dddd');
+2024-06-03 09:38:53 INFO  p6spy - #1717375133455 | took 3ms | statement | connection 23| url jdbc:oracle:thin:@localhost:1521:XE
+insert into PRODUCT (ID, NAME, PRICE, CATEGORY, DESCRIPTION)
+        values (SEQ_PRODUCT.nextval, ?, ?, ?, ?)
+insert into PRODUCT (ID, NAME, PRICE, CATEGORY, DESCRIPTION)
+        values (SEQ_PRODUCT.nextval, 'dd', 0.01, 'dd', 'dddd');
+2024-06-03 09:38:53 INFO  p6spy - #1717375133460 | took 0ms | statement | connection 13| url jdbc:p6spy:oracle:thin:@localhost:1521:XE
+select id, name from product
+select id, name from product;
+2024-06-03 09:38:53 INFO  p6spy - #1717375133460 | took 0ms | statement | connection 24| url jdbc:oracle:thin:@localhost:1521:XE
+select id, name from product
+select id, name from product;
+2024-06-03 09:38:59 INFO  p6spy - #1717375139844 | took 3ms | statement | connection 13| url jdbc:p6spy:oracle:thin:@localhost:1521:XE
+select * from product
+        where id = ?
+select * from product
+        where id = 18;
+2024-06-03 09:38:59 INFO  p6spy - #1717375139844 | took 3ms | statement | connection 25| url jdbc:oracle:thin:@localhost:1521:XE
+select * from product
+        where id = ?
+select * from product
+        where id = 18;
+2024-06-03 09:39:01 INFO  p6spy - #1717375141591 | took 1ms | statement | connection 13| url jdbc:p6spy:oracle:thin:@localhost:1521:XE
+delete from PRODUCT
+        where id = ?
+delete from PRODUCT
+        where id = 18;
+2024-06-03 09:39:01 INFO  p6spy - #1717375141591 | took 2ms | statement | connection 26| url jdbc:oracle:thin:@localhost:1521:XE
+delete from PRODUCT
+        where id = ?
+delete from PRODUCT
+        where id = 18;
+2024-06-03 09:39:01 INFO  p6spy - #1717375141633 | took 0ms | statement | connection 13| url jdbc:p6spy:oracle:thin:@localhost:1521:XE
+select id, name from product
+select id, name from product;
+2024-06-03 09:39:01 INFO  p6spy - #1717375141633 | took 0ms | statement | connection 27| url jdbc:oracle:thin:@localhost:1521:XE
+select id, name from product
+select id, name from product;
+2024-06-03 09:39:28 INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener - Restarting due to 10 class path changes (0 additions, 0 deletions, 10 modifications)
+2024-06-03 09:39:28 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Shutdown initiated...
+2024-06-03 09:39:28 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Shutdown completed.
+2024-06-03 09:39:28 INFO  c.e.d.DMybatisTaskApplication - Starting DMybatisTaskApplication using Java 17.0.1 with PID 9752 (D:\강의 자료\spring_basic\spring_basic\workspace\d_mybatisTask\build\classes\java\main started by Administrator in D:\강의 자료\spring_basic\spring_basic\workspace\d_mybatisTask)
+2024-06-03 09:39:28 INFO  c.e.d.DMybatisTaskApplication - No active profile set, falling back to 1 default profile: "default"
+2024-06-03 09:39:28 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8090 (http)
+2024-06-03 09:39:28 INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2024-06-03 09:39:28 INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.24]
+2024-06-03 09:39:28 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-06-03 09:39:28 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 139 ms
+2024-06-03 09:39:28 INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2024-06-03 09:39:28 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8090 (http) with context path ''
+2024-06-03 09:39:28 INFO  c.e.d.DMybatisTaskApplication - Started DMybatisTaskApplication in 0.253 seconds (process running for 81.785)
+2024-06-03 09:39:28 INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+2024-06-03 09:39:29 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-06-03 09:39:29 INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2024-06-03 09:39:29 INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2024-06-03 09:39:29 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-3 - Starting...
+2024-06-03 09:39:29 INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-3 - Added connection com.p6spy.engine.wrapper.ConnectionWrapper@576916a7
+2024-06-03 09:39:29 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-3 - Start completed.
+2024-06-03 09:39:29 INFO  p6spy - #1717375169570 | took 0ms | statement | connection 29| url jdbc:p6spy:oracle:thin:@localhost:1521:XE
+select id, name from product
+        order by id
+select id, name from product
+        order by id;
+2024-06-03 09:39:29 INFO  p6spy - #1717375169570 | took 0ms | statement | connection 28| url jdbc:oracle:thin:@localhost:1521:XE
+select id, name from product
+        order by id
+select id, name from product
+        order by id;
+2024-06-03 09:39:35 INFO  p6spy - #1717375175163 | took 0ms | statement | connection 29| url jdbc:p6spy:oracle:thin:@localhost:1521:XE
+insert into PRODUCT (ID, NAME, PRICE, CATEGORY, DESCRIPTION)
+        values (SEQ_PRODUCT.nextval, ?, ?, ?, ?)
+insert into PRODUCT (ID, NAME, PRICE, CATEGORY, DESCRIPTION)
+        values (SEQ_PRODUCT.nextval, 'adsf', 0.01, 'adsf', 'asdfasdf');
+2024-06-03 09:39:35 INFO  p6spy - #1717375175163 | took 0ms | statement | connection 39| url jdbc:oracle:thin:@localhost:1521:XE
+insert into PRODUCT (ID, NAME, PRICE, CATEGORY, DESCRIPTION)
+        values (SEQ_PRODUCT.nextval, ?, ?, ?, ?)
+insert into PRODUCT (ID, NAME, PRICE, CATEGORY, DESCRIPTION)
+        values (SEQ_PRODUCT.nextval, 'adsf', 0.01, 'adsf', 'asdfasdf');
+2024-06-03 09:39:35 INFO  p6spy - #1717375175163 | took 0ms | statement | connection 29| url jdbc:p6spy:oracle:thin:@localhost:1521:XE
+select id, name from product
+        order by id
+select id, name from product
+        order by id;
+2024-06-03 09:39:35 INFO  p6spy - #1717375175163 | took 0ms | statement | connection 40| url jdbc:oracle:thin:@localhost:1521:XE
+select id, name from product
+        order by id
+select id, name from product
+        order by id;
+2024-06-03 09:41:01 INFO  p6spy - #1717375261189 | took 0ms | statement | connection 29| url jdbc:p6spy:oracle:thin:@localhost:1521:XE
+select * from product
+        where id = ?
+select * from product
+        where id = 6;
+2024-06-03 09:41:01 INFO  p6spy - #1717375261189 | took 0ms | statement | connection 41| url jdbc:oracle:thin:@localhost:1521:XE
+select * from product
+        where id = ?
+select * from product
+        where id = 6;
+2024-06-03 09:41:02 INFO  p6spy - #1717375262572 | took 0ms | statement | connection 29| url jdbc:p6spy:oracle:thin:@localhost:1521:XE
+select id, name from product
+        order by id
+select id, name from product
+        order by id;
+2024-06-03 09:41:02 INFO  p6spy - #1717375262573 | took 0ms | statement | connection 42| url jdbc:oracle:thin:@localhost:1521:XE
+select id, name from product
+        order by id
+select id, name from product
+        order by id;
+2024-06-03 09:41:03 INFO  p6spy - #1717375263692 | took 0ms | statement | connection 29| url jdbc:p6spy:oracle:thin:@localhost:1521:XE
+select * from product
+        where id = ?
+select * from product
+        where id = 19;
+2024-06-03 09:41:03 INFO  p6spy - #1717375263692 | took 0ms | statement | connection 43| url jdbc:oracle:thin:@localhost:1521:XE
+select * from product
+        where id = ?
+select * from product
+        where id = 19;
+2024-06-03 09:41:06 INFO  p6spy - #1717375266547 | took 0ms | statement | connection 29| url jdbc:p6spy:oracle:thin:@localhost:1521:XE
+select * from product
+        where id = ?
+select * from product
+        where id = 19;
+2024-06-03 09:41:06 INFO  p6spy - #1717375266548 | took 0ms | statement | connection 44| url jdbc:oracle:thin:@localhost:1521:XE
+select * from product
+        where id = ?
+select * from product
+        where id = 19;
+2024-06-03 09:41:08 INFO  p6spy - #1717375268565 | took 2ms | statement | connection 29| url jdbc:p6spy:oracle:thin:@localhost:1521:XE
+UPDATE product
+        SET
+            name = ?,
+            price = ?,
+            category = ?,
+            description = ?
+        WHERE id = ?
+UPDATE product
+        SET
+            name = 'adsf',
+            price = 0.01,
+            category = 'adsf',
+            description = 'asdfasdfdd'
+        WHERE id = 19;
+2024-06-03 09:41:08 INFO  p6spy - #1717375268565 | took 2ms | statement | connection 45| url jdbc:oracle:thin:@localhost:1521:XE
+UPDATE product
+        SET
+            name = ?,
+            price = ?,
+            category = ?,
+            description = ?
+        WHERE id = ?
+UPDATE product
+        SET
+            name = 'adsf',
+            price = 0.01,
+            category = 'adsf',
+            description = 'asdfasdfdd'
+        WHERE id = 19;
+2024-06-03 09:41:08 INFO  p6spy - #1717375268569 | took 0ms | statement | connection 29| url jdbc:p6spy:oracle:thin:@localhost:1521:XE
+select * from product
+        where id = ?
+select * from product
+        where id = 19;
+2024-06-03 09:41:08 INFO  p6spy - #1717375268569 | took 0ms | statement | connection 46| url jdbc:oracle:thin:@localhost:1521:XE
+select * from product
+        where id = ?
+select * from product
+        where id = 19;
+2024-06-03 09:41:10 INFO  p6spy - #1717375270547 | took 1ms | statement | connection 29| url jdbc:p6spy:oracle:thin:@localhost:1521:XE
+delete from PRODUCT
+        where id = ?
+delete from PRODUCT
+        where id = 19;
+2024-06-03 09:41:10 INFO  p6spy - #1717375270547 | took 1ms | statement | connection 47| url jdbc:oracle:thin:@localhost:1521:XE
+delete from PRODUCT
+        where id = ?
+delete from PRODUCT
+        where id = 19;
+2024-06-03 09:41:10 INFO  p6spy - #1717375270551 | took 0ms | statement | connection 29| url jdbc:p6spy:oracle:thin:@localhost:1521:XE
+select id, name from product
+        order by id
+select id, name from product
+        order by id;
+2024-06-03 09:41:10 INFO  p6spy - #1717375270551 | took 0ms | statement | connection 48| url jdbc:oracle:thin:@localhost:1521:XE
+select id, name from product
+        order by id
+select id, name from product
+        order by id;
+2024-06-03 09:42:37 INFO  p6spy - #1717375357651 | took 0ms | statement | connection 29| url jdbc:p6spy:oracle:thin:@localhost:1521:XE
+select id, name from product
+        order by id
+select id, name from product
+        order by id;
+2024-06-03 09:42:37 INFO  p6spy - #1717375357651 | took 0ms | statement | connection 49| url jdbc:oracle:thin:@localhost:1521:XE
+select id, name from product
+        order by id
+select id, name from product
+        order by id;
+2024-06-03 09:42:38 INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener - Restarting due to 10 class path changes (0 additions, 0 deletions, 10 modifications)
+2024-06-03 09:42:38 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-3 - Shutdown initiated...
+2024-06-03 09:42:38 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-3 - Shutdown completed.
+2024-06-03 09:42:38 INFO  c.e.d.DMybatisTaskApplication - Starting DMybatisTaskApplication using Java 17.0.1 with PID 9752 (D:\강의 자료\spring_basic\spring_basic\workspace\d_mybatisTask\build\classes\java\main started by Administrator in D:\강의 자료\spring_basic\spring_basic\workspace\d_mybatisTask)
+2024-06-03 09:42:38 INFO  c.e.d.DMybatisTaskApplication - No active profile set, falling back to 1 default profile: "default"
+2024-06-03 09:42:38 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8090 (http)
+2024-06-03 09:42:38 INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2024-06-03 09:42:38 INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.24]
+2024-06-03 09:42:38 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-06-03 09:42:38 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 130 ms
+2024-06-03 09:42:38 INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2024-06-03 09:42:38 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8090 (http) with context path ''
+2024-06-03 09:42:38 INFO  c.e.d.DMybatisTaskApplication - Started DMybatisTaskApplication in 0.241 seconds (process running for 271.297)
+2024-06-03 09:42:38 INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+2024-06-03 09:42:39 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-06-03 09:42:39 INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2024-06-03 09:42:39 INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2024-06-03 09:42:43 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-4 - Starting...
+2024-06-03 09:42:43 INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-4 - Added connection com.p6spy.engine.wrapper.ConnectionWrapper@2c6a22a4
+2024-06-03 09:42:43 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-4 - Start completed.
+2024-06-03 09:42:43 INFO  p6spy - #1717375363897 | took 1ms | statement | connection 51| url jdbc:p6spy:oracle:thin:@localhost:1521:XE
+insert into PRODUCT (ID, NAME, PRICE, CATEGORY, DESCRIPTION)
+        values (SEQ_PRODUCT.nextval, ?, ?, ?, ?)
+insert into PRODUCT (ID, NAME, PRICE, CATEGORY, DESCRIPTION)
+        values (SEQ_PRODUCT.nextval, 'ㅁㅇㄴㄹ', 0.02, 'ㅇㅇ', 'ㅇㅇ');
+2024-06-03 09:42:43 INFO  p6spy - #1717375363898 | took 1ms | statement | connection 50| url jdbc:oracle:thin:@localhost:1521:XE
+insert into PRODUCT (ID, NAME, PRICE, CATEGORY, DESCRIPTION)
+        values (SEQ_PRODUCT.nextval, ?, ?, ?, ?)
+insert into PRODUCT (ID, NAME, PRICE, CATEGORY, DESCRIPTION)
+        values (SEQ_PRODUCT.nextval, 'ㅁㅇㄴㄹ', 0.02, 'ㅇㅇ', 'ㅇㅇ');
+2024-06-03 09:42:43 INFO  p6spy - #1717375363898 | took 0ms | statement | connection 51| url jdbc:p6spy:oracle:thin:@localhost:1521:XE
+select id, name from product
+        order by id
+select id, name from product
+        order by id;
+2024-06-03 09:42:43 INFO  p6spy - #1717375363898 | took 0ms | statement | connection 52| url jdbc:oracle:thin:@localhost:1521:XE
+select id, name from product
+        order by id
+select id, name from product
+        order by id;
+2024-06-03 09:42:45 INFO  p6spy - #1717375365196 | took 0ms | statement | connection 51| url jdbc:p6spy:oracle:thin:@localhost:1521:XE
+select * from product
+        where id = ?
+select * from product
+        where id = 20;
+2024-06-03 09:42:45 INFO  p6spy - #1717375365196 | took 0ms | statement | connection 62| url jdbc:oracle:thin:@localhost:1521:XE
+select * from product
+        where id = ?
+select * from product
+        where id = 20;
+2024-06-03 09:42:53 INFO  p6spy - #1717375373532 | took 0ms | statement | connection 51| url jdbc:p6spy:oracle:thin:@localhost:1521:XE
+delete from PRODUCT
+        where id = ?
+delete from PRODUCT
+        where id = 20;
+2024-06-03 09:42:53 INFO  p6spy - #1717375373532 | took 0ms | statement | connection 63| url jdbc:oracle:thin:@localhost:1521:XE
+delete from PRODUCT
+        where id = ?
+delete from PRODUCT
+        where id = 20;
+2024-06-03 09:42:53 INFO  p6spy - #1717375373536 | took 0ms | statement | connection 51| url jdbc:p6spy:oracle:thin:@localhost:1521:XE
+select id, name from product
+        order by id
+select id, name from product
+        order by id;
+2024-06-03 09:42:53 INFO  p6spy - #1717375373536 | took 0ms | statement | connection 64| url jdbc:oracle:thin:@localhost:1521:XE
+select id, name from product
+        order by id
+select id, name from product
+        order by id;
+2024-06-03 09:47:16 INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener - Restarting due to 4 class path changes (0 additions, 4 deletions, 0 modifications)
+2024-06-03 09:47:16 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-4 - Shutdown initiated...
+2024-06-03 09:47:16 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-4 - Shutdown completed.
+2024-06-03 09:47:16 INFO  c.e.d.DMybatisTaskApplication - Starting DMybatisTaskApplication using Java 17.0.1 with PID 9752 (D:\강의 자료\spring_basic\spring_basic\workspace\d_mybatisTask\build\classes\java\main started by Administrator in D:\강의 자료\spring_basic\spring_basic\workspace\d_mybatisTask)
+2024-06-03 09:47:16 INFO  c.e.d.DMybatisTaskApplication - No active profile set, falling back to 1 default profile: "default"
+2024-06-03 09:47:17 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8090 (http)
+2024-06-03 09:47:17 INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2024-06-03 09:47:17 INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.24]
+2024-06-03 09:47:17 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-06-03 09:47:17 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 159 ms
+2024-06-03 09:47:17 INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2024-06-03 09:47:17 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8090 (http) with context path ''
+2024-06-03 09:47:17 INFO  c.e.d.DMybatisTaskApplication - Started DMybatisTaskApplication in 0.286 seconds (process running for 550.231)
+2024-06-03 09:47:17 INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+2024-06-03 09:47:17 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-06-03 09:47:17 INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2024-06-03 09:47:17 INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2024-06-03 09:47:17 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-5 - Starting...
+2024-06-03 09:47:17 INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-5 - Added connection com.p6spy.engine.wrapper.ConnectionWrapper@53ee4da3
+2024-06-03 09:47:17 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-5 - Start completed.
+2024-06-03 09:47:17 INFO  p6spy - #1717375637956 | took 0ms | statement | connection 66| url jdbc:p6spy:oracle:thin:@localhost:1521:XE
+select id, name from product
+        order by id
+select id, name from product
+        order by id;
+2024-06-03 09:47:17 INFO  p6spy - #1717375637956 | took 0ms | statement | connection 65| url jdbc:oracle:thin:@localhost:1521:XE
+select id, name from product
+        order by id
+select id, name from product
+        order by id;
+2024-06-03 09:47:18 INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener - Restarting due to 14 class path changes (4 additions, 0 deletions, 10 modifications)
+2024-06-03 09:47:18 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-5 - Shutdown initiated...
+2024-06-03 09:47:18 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-5 - Shutdown completed.
+2024-06-03 09:47:18 INFO  c.e.d.DMybatisTaskApplication - Starting DMybatisTaskApplication using Java 17.0.1 with PID 9752 (D:\강의 자료\spring_basic\spring_basic\workspace\d_mybatisTask\build\classes\java\main started by Administrator in D:\강의 자료\spring_basic\spring_basic\workspace\d_mybatisTask)
+2024-06-03 09:47:18 INFO  c.e.d.DMybatisTaskApplication - No active profile set, falling back to 1 default profile: "default"
+2024-06-03 09:47:18 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8090 (http)
+2024-06-03 09:47:18 INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2024-06-03 09:47:18 INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.24]
+2024-06-03 09:47:18 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-06-03 09:47:18 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 136 ms
+2024-06-03 09:47:18 INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2024-06-03 09:47:18 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8090 (http) with context path ''
+2024-06-03 09:47:18 INFO  c.e.d.DMybatisTaskApplication - Started DMybatisTaskApplication in 0.252 seconds (process running for 551.915)
+2024-06-03 09:47:18 INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+2024-06-03 09:47:19 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-06-03 09:47:19 INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2024-06-03 09:47:19 INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2024-06-03 09:47:24 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-6 - Starting...
+2024-06-03 09:47:24 INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-6 - Added connection com.p6spy.engine.wrapper.ConnectionWrapper@1027569
+2024-06-03 09:47:24 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-6 - Start completed.
+2024-06-03 09:47:24 INFO  p6spy - #1717375644210 | took 0ms | statement | connection 77| url jdbc:p6spy:oracle:thin:@localhost:1521:XE
+insert into PRODUCT (ID, NAME, PRICE, CATEGORY, DESCRIPTION)
+        values (SEQ_PRODUCT.nextval, ?, ?, ?, ?)
+insert into PRODUCT (ID, NAME, PRICE, CATEGORY, DESCRIPTION)
+        values (SEQ_PRODUCT.nextval, 'ㅇㅇ', 0.02, 'ㅇㅇ', 'ㅇㅇ');
+2024-06-03 09:47:24 INFO  p6spy - #1717375644210 | took 0ms | statement | connection 76| url jdbc:oracle:thin:@localhost:1521:XE
+insert into PRODUCT (ID, NAME, PRICE, CATEGORY, DESCRIPTION)
+        values (SEQ_PRODUCT.nextval, ?, ?, ?, ?)
+insert into PRODUCT (ID, NAME, PRICE, CATEGORY, DESCRIPTION)
+        values (SEQ_PRODUCT.nextval, 'ㅇㅇ', 0.02, 'ㅇㅇ', 'ㅇㅇ');
+2024-06-03 09:47:24 INFO  p6spy - #1717375644215 | took 0ms | statement | connection 77| url jdbc:p6spy:oracle:thin:@localhost:1521:XE
+select id, name from product
+        order by id
+select id, name from product
+        order by id;
+2024-06-03 09:47:24 INFO  p6spy - #1717375644215 | took 0ms | statement | connection 78| url jdbc:oracle:thin:@localhost:1521:XE
+select id, name from product
+        order by id
+select id, name from product
+        order by id;
+2024-06-03 09:47:37 INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener - Restarting due to 10 class path changes (0 additions, 0 deletions, 10 modifications)
+2024-06-03 09:47:37 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-6 - Shutdown initiated...
+2024-06-03 09:47:37 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-6 - Shutdown completed.
+2024-06-03 09:47:37 INFO  c.e.d.DMybatisTaskApplication - Starting DMybatisTaskApplication using Java 17.0.1 with PID 9752 (D:\강의 자료\spring_basic\spring_basic\workspace\d_mybatisTask\build\classes\java\main started by Administrator in D:\강의 자료\spring_basic\spring_basic\workspace\d_mybatisTask)
+2024-06-03 09:47:37 INFO  c.e.d.DMybatisTaskApplication - No active profile set, falling back to 1 default profile: "default"
+2024-06-03 09:47:37 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8090 (http)
+2024-06-03 09:47:37 INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2024-06-03 09:47:37 INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.24]
+2024-06-03 09:47:37 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-06-03 09:47:37 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 135 ms
+2024-06-03 09:47:37 INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2024-06-03 09:47:37 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8090 (http) with context path ''
+2024-06-03 09:47:37 INFO  c.e.d.DMybatisTaskApplication - Started DMybatisTaskApplication in 0.25 seconds (process running for 570.8)
+2024-06-03 09:47:37 INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+2024-06-03 09:47:39 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-06-03 09:47:39 INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2024-06-03 09:47:39 INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2024-06-03 09:47:39 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-7 - Starting...
+2024-06-03 09:47:39 INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-7 - Added connection com.p6spy.engine.wrapper.ConnectionWrapper@6be7c720
+2024-06-03 09:47:39 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-7 - Start completed.
+2024-06-03 09:47:39 INFO  p6spy - #1717375659115 | took 0ms | statement | connection 89| url jdbc:p6spy:oracle:thin:@localhost:1521:XE
+select * from product
+        where id = ?
+select * from product
+        where id = 21;
+2024-06-03 09:47:39 INFO  p6spy - #1717375659115 | took 0ms | statement | connection 88| url jdbc:oracle:thin:@localhost:1521:XE
+select * from product
+        where id = ?
+select * from product
+        where id = 21;
+2024-06-03 09:47:41 INFO  p6spy - #1717375661058 | took 1ms | statement | connection 89| url jdbc:p6spy:oracle:thin:@localhost:1521:XE
+delete from PRODUCT
+        where id = ?
+delete from PRODUCT
+        where id = 21;
+2024-06-03 09:47:41 INFO  p6spy - #1717375661058 | took 1ms | statement | connection 99| url jdbc:oracle:thin:@localhost:1521:XE
+delete from PRODUCT
+        where id = ?
+delete from PRODUCT
+        where id = 21;
+2024-06-03 09:47:41 INFO  p6spy - #1717375661061 | took 0ms | statement | connection 89| url jdbc:p6spy:oracle:thin:@localhost:1521:XE
+select id, name from product
+        order by id
+select id, name from product
+        order by id;
+2024-06-03 09:47:41 INFO  p6spy - #1717375661061 | took 0ms | statement | connection 100| url jdbc:oracle:thin:@localhost:1521:XE
+select id, name from product
+        order by id
+select id, name from product
+        order by id;
+2024-06-03 09:47:45 INFO  p6spy - #1717375665940 | took 1ms | statement | connection 89| url jdbc:p6spy:oracle:thin:@localhost:1521:XE
+insert into PRODUCT (ID, NAME, PRICE, CATEGORY, DESCRIPTION)
+        values (SEQ_PRODUCT.nextval, ?, ?, ?, ?)
+insert into PRODUCT (ID, NAME, PRICE, CATEGORY, DESCRIPTION)
+        values (SEQ_PRODUCT.nextval, 'ㅇ', 0.01, 'ㅁㄴㅇㄹ', 'ㅁㄴㅇㄻㄴㅇㄹ');
+2024-06-03 09:47:45 INFO  p6spy - #1717375665940 | took 1ms | statement | connection 101| url jdbc:oracle:thin:@localhost:1521:XE
+insert into PRODUCT (ID, NAME, PRICE, CATEGORY, DESCRIPTION)
+        values (SEQ_PRODUCT.nextval, ?, ?, ?, ?)
+insert into PRODUCT (ID, NAME, PRICE, CATEGORY, DESCRIPTION)
+        values (SEQ_PRODUCT.nextval, 'ㅇ', 0.01, 'ㅁㄴㅇㄹ', 'ㅁㄴㅇㄻㄴㅇㄹ');
+2024-06-03 09:47:45 INFO  p6spy - #1717375665944 | took 0ms | statement | connection 89| url jdbc:p6spy:oracle:thin:@localhost:1521:XE
+select id, name from product
+        order by id
+select id, name from product
+        order by id;
+2024-06-03 09:47:45 INFO  p6spy - #1717375665944 | took 0ms | statement | connection 102| url jdbc:oracle:thin:@localhost:1521:XE
+select id, name from product
+        order by id
+select id, name from product
+        order by id;
+2024-06-03 10:10:37 INFO  p6spy - #1717377037375 | took 0ms | statement | connection 89| url jdbc:p6spy:oracle:thin:@localhost:1521:XE
+select * from product
+        where id = ?
+select * from product
+        where id = 6;
+2024-06-03 10:10:37 INFO  p6spy - #1717377037375 | took 0ms | statement | connection 103| url jdbc:oracle:thin:@localhost:1521:XE
+select * from product
+        where id = ?
+select * from product
+        where id = 6;
+2024-06-03 10:10:39 INFO  p6spy - #1717377039169 | took 0ms | statement | connection 89| url jdbc:p6spy:oracle:thin:@localhost:1521:XE
+select id, name from product
+        order by id
+select id, name from product
+        order by id;
+2024-06-03 10:10:39 INFO  p6spy - #1717377039170 | took 0ms | statement | connection 104| url jdbc:oracle:thin:@localhost:1521:XE
+select id, name from product
+        order by id
+select id, name from product
+        order by id;
+2024-06-03 18:00:14 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-7 - Shutdown initiated...
+2024-06-03 18:00:14 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-7 - Shutdown completed.

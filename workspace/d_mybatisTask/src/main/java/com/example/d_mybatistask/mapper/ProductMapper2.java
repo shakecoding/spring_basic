@@ -14,7 +14,7 @@ public interface ProductMapper2 {
 
     ProductDetailDTO findById(long id);
 
-    void insertProduct(ProductVO vo);
+    int insertProduct(ProductVO vo);
 
     void updateProductD(ProductVO vo);
 

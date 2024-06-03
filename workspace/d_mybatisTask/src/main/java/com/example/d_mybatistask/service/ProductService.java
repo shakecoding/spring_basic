@@ -14,7 +14,7 @@ public interface ProductService {
 
     ProductDetailDTO findById(long id);
 
-    void insert(ProductVO vo);
+    int insert(ProductVO vo);
 
     void updateProductD(ProductVO vo);
 

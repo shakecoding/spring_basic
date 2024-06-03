@@ -28,8 +28,9 @@
     <h1 class="mb-4">Product List</h1>
 
     <!-- 성공 메시지 표시 영역 -->
-    <div th:if="${message}" class="alert alert-success alert-dismissible fade show" role="alert">
-        <span th:text="${message}"></span>
+<!--    <div th:if="${message}" class="alert alert-success alert-dismissible fade show" role="alert">-->
+    <div th:if="${msg}" class="alert alert-success alert-dismissible fade show">
+        <span th:text="${msg}"></span>
         <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
     </div>
 

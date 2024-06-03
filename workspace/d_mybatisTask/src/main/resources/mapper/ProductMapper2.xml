@@ -7,6 +7,7 @@
 
     <select id="selectList" resultType="ProductDTO">
         select id, name from product
+        order by id
     </select>
 
     <select id="findById" resultType="ProductDetailDTO">

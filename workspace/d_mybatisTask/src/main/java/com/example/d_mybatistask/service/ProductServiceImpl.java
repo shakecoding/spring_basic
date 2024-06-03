@@ -30,8 +30,8 @@ public class ProductServiceImpl implements ProductService {
     }
 
     @Override
-    public void insert(ProductVO vo) {
-        productMapper2.insertProduct(vo);
+    public int insert(ProductVO vo) {
+        return productMapper2.insertProduct(vo);
     }
 
     @Override
