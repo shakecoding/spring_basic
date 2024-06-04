@@ -1,15 +1,20 @@
 package com.example.d_mybatistask.controller;
 
 
+import com.example.d_mybatistask.domain.dto.ProductDTO;
 import com.example.d_mybatistask.domain.dto.ProductDetailDTO;
 import com.example.d_mybatistask.domain.vo.ProductVO;
+import com.example.d_mybatistask.service.PagingService;
 import com.example.d_mybatistask.service.ProductService;
+import com.github.pagehelper.PageInfo;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.servlet.mvc.support.RedirectAttributes;
+
+import java.util.List;
 
 @Controller
 @RequiredArgsConstructor
@@ -18,6 +23,9 @@ import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 public class ProductController {
 
     private final ProductService productService;
+
+    // 페이징 테스트
+    private final PagingService pagingService;
 
     @GetMapping
     public String index() {return "product/index";}
@@ -84,6 +92,26 @@ public class ProductController {
         }
 
         return "redirect:/product/list";
+    }
+
+
+    @GetMapping("/paging")
+    public String listProducts(@RequestParam(value = "page", defaultValue = "1") int page,
+                               @RequestParam(value = "pageSize", defaultValue = "5") int pageSize,
+                               Model model) {
+        int totalProducts = pagingService.countProducts();
+        int totalPages = (int) Math.ceil((double) totalProducts / pageSize);
+
+        List<ProductDTO> products = pagingService.selectProducts(page, pageSize);
+
+
+
+        model.addAttribute("products", products);
+        model.addAttribute("currentPage", page);
+        model.addAttribute("totalPages", totalPages);
+        model.addAttribute("pageSize", pageSize);
+
+        return "product/paging"; // Thymeleaf 템플릿 파일 이름
     }
 
 }
