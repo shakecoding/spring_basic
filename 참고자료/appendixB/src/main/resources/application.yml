@@ -24,3 +24,6 @@ spring:
 jwt:
   issuer: ajufresh@gmail.com
   secret_key: study-springboot
+
+server:
+  port: 8090

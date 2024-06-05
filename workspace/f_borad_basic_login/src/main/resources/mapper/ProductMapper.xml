@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.example.f_board_basic_login.mapper.ProductMapper">
+    <select id="findByConditions" resultType="ProductVO">
+        SELECT * FROM product
+        <where>
+            <if test="name != null">AND name like '%' || #{name} ||'%'</if>
+            <if test="category != null">AND category = #{category}</if>
+            <if test="price != null">AND price = #{price}</if>
+        </where>
+    </select>
+
+    <select id="findByChoose" resultType="ProductVO">
+        SELECT * FROM product
+        <where>
+            <choose>
+                <when test="name != null">AND name = #{name}</when>
+                <when test="category != null">AND category = #{category}</when>
+                <otherwise>AND price &lt; 1000</otherwise>
+            </choose>
+        </where>
+    </select>
+
+    <insert id="insert" parameterType="com.example.f_board_basic_login.domain.vo.ProductVO" useGeneratedKeys="true" keyProperty="id">
+        INSERT INTO product (id, name, price, category, description)
+        VALUES (SEQ_PRODUCT.nextval ,#{name}, #{price}, #{category}, #{description})
+    </insert>
+
+    <update id="update" parameterType="com.example.f_board_basic_login.domain.vo.ProductVO">
+        UPDATE product
+        <set>
+            <if test="name != null">name = #{name},</if>
+            <if test="price != null">price = #{price},</if>
+            <if test="category != null">category = #{category},</if>
+            <if test="description != null">description = #{description}</if>
+        </set>
+        WHERE id = #{id}
+    </update>
+
+    <delete id="delete" parameterType="long">
+        DELETE FROM product WHERE id = #{id}
+    </delete>
+</mapper>

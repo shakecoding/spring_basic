@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.example.f_board_basic_login.mapper.ProductMapper2">
+
+    <select id="selectList" resultType="ProductDTO">
+        select id, name from product
+        order by id
+    </select>
+
+    <select id="findById" resultType="ProductDetailDTO">
+        select * from product
+        where id = #{id}
+    </select>
+
+    <insert id="insertProduct">
+        insert into PRODUCT (ID, NAME, PRICE, CATEGORY, DESCRIPTION)
+        values (SEQ_PRODUCT.nextval, #{name}, #{price}, #{category}, #{description})
+    </insert>
+
+<!--    동적쿼리    -->
+    <update id="updateProductD">
+        UPDATE product
+        <set>
+            <if test="name != null">name = #{name},</if>
+            <if test="price != null">price = #{price},</if>
+            <if test="category != null">category = #{category},</if>
+            <if test="description != null">description = #{description},</if>
+        </set>
+        WHERE id = #{id}
+    </update>
+
+    <update id="updateProduct">
+        UPDATE product
+        SET
+            name = #{name},
+            price = #{price},
+            category = #{category},
+            description = #{description}
+        WHERE id = #{id}
+    </update>
+
+    <delete id="deleteById">
+        delete from PRODUCT
+        where id = #{id}
+    </delete>
+
+</mapper>
