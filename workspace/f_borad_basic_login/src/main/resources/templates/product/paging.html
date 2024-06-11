@@ -57,16 +57,39 @@
         <a th:href="@{/product/write}" class="btn btn-success">새 물품 등록</a>
     </div>
 
+<!--    <nav>-->
+<!--        <ul class="pagination justify-content-center">-->
+<!--            <li th:classappend="${currentPage == 1} ? 'disabled' : ''" class="page-item">-->
+<!--                <a class="page-link" th:href="@{/product/paging(page=${currentPage - 1}, pageSize=${pageSize})}">Previous</a>-->
+<!--            </li>-->
+<!--            <li th:each="i : ${#numbers.sequence(1, totalPages)}" th:classappend="${currentPage == i} ? 'active' : ''" class="page-item">-->
+<!--                <a class="page-link" th:href="@{/product/paging(page=${i}, pageSize=${pageSize})}" th:text="${i}"></a>-->
+<!--            </li>-->
+<!--            <li th:classappend="${currentPage == totalPages} ? 'disabled' : ''" class="page-item">-->
+<!--                <a class="page-link" th:href="@{/product/paging(page=${currentPage + 1}, pageSize=${pageSize})}">Next</a>-->
+<!--            </li>-->
+<!--        </ul>-->
+<!--    </nav>-->
+
     <nav>
         <ul class="pagination justify-content-center">
-            <li th:classappend="${currentPage == 1} ? 'disabled' : ''" class="page-item">
-                <a class="page-link" th:href="@{/product/paging(page=${currentPage - 1}, pageSize=${pageSize})}">Previous</a>
+            <!-- Previous group button -->
+            <li th:classappend="${startPage == 1} ? 'disabled' : ''" class="page-item">
+                <a class="page-link" th:href="@{/product/paging(page=${startPage - 1}, pageSize=${pageSize})}" aria-label="Previous">
+                    <span aria-hidden="true">&laquo;</span>
+                </a>
             </li>
-            <li th:each="i : ${#numbers.sequence(1, totalPages)}" th:classappend="${currentPage == i} ? 'active' : ''" class="page-item">
+
+            <!-- Page numbers -->
+            <li th:each="i : ${#numbers.sequence(startPage, endPage)}" th:classappend="${currentPage == i} ? 'active' : ''" class="page-item">
                 <a class="page-link" th:href="@{/product/paging(page=${i}, pageSize=${pageSize})}" th:text="${i}"></a>
             </li>
-            <li th:classappend="${currentPage == totalPages} ? 'disabled' : ''" class="page-item">
-                <a class="page-link" th:href="@{/product/paging(page=${currentPage + 1}, pageSize=${pageSize})}">Next</a>
+
+            <!-- Next group button -->
+            <li th:classappend="${endPage == totalPages} ? 'disabled' : ''" class="page-item">
+                <a class="page-link" th:href="@{/product/paging(page=${endPage + 1}, pageSize=${pageSize})}" aria-label="Next">
+                    <span aria-hidden="true">&raquo;</span>
+                </a>
             </li>
         </ul>
     </nav>

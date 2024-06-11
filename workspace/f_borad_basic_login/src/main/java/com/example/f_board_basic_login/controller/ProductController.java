@@ -96,10 +96,14 @@ public class ProductController {
 
     @GetMapping("/paging")
     public String listProducts(@RequestParam(value = "page", defaultValue = "1") int page,
-                               @RequestParam(value = "pageSize", defaultValue = "5") int pageSize,
+                               @RequestParam(value = "pageSize", defaultValue = "2") int pageSize,
                                Model model) {
         int totalProducts = pagingService.countProducts();
         int totalPages = (int) Math.ceil((double) totalProducts / pageSize);
+
+        int pageGroupSize = 5;
+        int startPage = ((page - 1) / pageGroupSize) * pageGroupSize + 1;
+        int endPage = Math.min(startPage + pageGroupSize - 1, totalPages);
 
         List<ProductDTO> products = pagingService.selectProducts(page, pageSize);
 
@@ -109,6 +113,9 @@ public class ProductController {
         model.addAttribute("currentPage", page);
         model.addAttribute("totalPages", totalPages);
         model.addAttribute("pageSize", pageSize);
+
+        model.addAttribute("startPage", startPage);
+        model.addAttribute("endPage", endPage);
 
         return "product/paging"; // Thymeleaf 템플릿 파일 이름
     }
