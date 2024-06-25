@@ -1,0 +1,19 @@
+1. 팀장이 깃 오가니제이션 만들기
+2. 팀원들 이메일 초대해서 하기
+3. 팀장만! git init 을 통해서 하나 push 하기!
+4. 이 후 팀장도 fork 떠서 해야함!
+5. fork 떠서, 개인 레포지토리 만들기
+6. 안되면 오가니제이션 설정 -> 멤버 -> 레포지토리 포크 체크!
+7. 개인 레포지토리들을 git clone 으로 보내기
+8. 깃 배쉬 열어서 remote 확인
+9. git log --oneline 보고 첫번째 커밋 시점 같은 지 확인
+10. 각각 원격 저장소에 branch 생성 이름은 develop
+11. develop 은 자신이 작업한 것만 push
+12. main 은 오가니제이션에 올릴 것들만!
+13. 새로운 branch 생성 git branch 이름
+14. git checkout 이름 -> 브랜치 변경
+15. main 시점에서 git merge 이름
+16. 그 다음 내 원격으로 push
+17. pr 보내고
+18. 팀장이 컨펌 하면 나머지는 pull 받으면 된다.
+19. git push origin branch 로 보내기
